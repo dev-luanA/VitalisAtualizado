@@ -1,0 +1,309 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8fc;
+}
+
+/* Hero Section */
+.hero-section {
+    color: 004d26;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nav Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    Background: linear-gradient(135deg, #004d26, #007d4f);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para destaque */
+}
+
+nav img {
+    width: 140px; /* Redimensionamento do logotipo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #fffa; /* Cor de destaque */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo no hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efeito de brilho */
+}
+.button {
+    padding: 10px 25px;
+    background-color: #7d4ede;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #6740b5;
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 205px;
+    background-color: #fff;
+    min-height: 60vh;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Seção de Atividades Físicas */
+.sections {
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.sections h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.icon-container {
+    background-color: #8FC58A;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.icon-container i {
+    font-size: 2rem;
+    color: #000;
+}
+
+/* Caixa verde */
+.green-box {
+    background-color: #d7f5e0;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 60px 100px;
+    text-align: center;
+}
+
+.green-box h2 {
+    color: #3f724b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.green-box p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-box-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.info-box-green span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Seção de Informações */
+.info-section {
+    padding: 60px 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #968EEB;
+    transition: background-color 0.3s;
+}
+
+.info-item:hover {
+    background-color: #968eeb15;
+}
+
+.item-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #968EEB;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info-content p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+    .hero {
+        padding: 40px 80px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .sections, .green-box, .info-section {
+        padding: 40px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    .button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .sections h2 {
+        font-size: 1.8rem;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .green-box, .info-section {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    .hero p, .info-content p {
+        font-size: 1rem;
+    }
+    .card {
+        width: 100%;
+    }
+    .sections h2 {
+        font-size: 1.5rem;
+    }
+    .button {
+        padding: 5px 15px;
+        font-size: 0.8rem;
+    }
+}

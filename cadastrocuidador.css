@@ -1,0 +1,159 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Seções esquerda e direita */
+.left-section, .right-section {
+    padding: 40px;
+    width: 50%;
+}
+
+.left-section {
+    background: rgba(240, 255, 240, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.left-section::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(145deg, #d4ff8e, #a1d28e);
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.left-section::after {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(145deg, #fa50ff, #ae3bbd);
+    border-radius: 50%;
+    bottom: -80px;
+    right: -80px;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.right-section {
+    background: rgba(245, 245, 255, 0.7);
+    position: relative;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos */
+.right-section h1, .left-section h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Grupos de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #888;
+}
+
+/* Botão de Cadastro */
+.create-account-btn {
+    background-color: white;
+    border: 2px solid #4f4fc8;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: #4f4fc8;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.create-account-btn:hover {
+    background-color: #4f4fc8;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Botão Login - Personalizado (Agora com o mesmo estilo do botão "Criar Conta") */
+.login-btn {
+    background-color: #4f4fc8;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #3737a6;
+}
+
+/* Efetuar Login */
+.login-btn:active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
